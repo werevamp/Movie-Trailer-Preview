@@ -16,7 +16,6 @@ MAIN_PAGE_HEAD = '''
     <link rel="stylesheet" href="css/style.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    <script src=""></script>
     <script type="text/javascript" charset="utf-8">
     </script>
 </head>
@@ -101,7 +100,10 @@ def generate_output_file(movies):
     output_file.write(MAIN_PAGE_HEAD + rendered_content)
     output_file.close()
 
+    open_movies_page(output_file)
+
 def open_movies_page(output_file):
     """open_movies_page opens the app in HTML page"""
     url = os.path.abspath(output_file.name)
     webbrowser.open('file://' + url, new=2) # open in a new tab, if possible
+

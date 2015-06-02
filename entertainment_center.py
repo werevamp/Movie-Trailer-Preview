@@ -57,4 +57,4 @@ def populate_movie_details():
 
 MOVIES = populate_movie_details()
 
-fresh_tomatoes.open_movies_page(MOVIES)
+fresh_tomatoes.generate_output_file(MOVIES)
