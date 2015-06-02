@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import fresh_tomatoes
 import media
 
