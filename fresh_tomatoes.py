@@ -63,6 +63,7 @@ MOVIE_TILE_CONTENT = '''
 </div>
 '''
 
+
 def create_movie_tiles_content(movies):
     """create_movie_tiles_content generates the movie titles"""
     movie_html_content = ''
@@ -85,6 +86,7 @@ def create_movie_tiles_content(movies):
 
     return movie_html_content
 
+
 def generate_output_file(movies):
     """generate_output_file creates the output file"""
 
@@ -101,8 +103,8 @@ def generate_output_file(movies):
 
     open_movies_page(output_file)
 
+
 def open_movies_page(output_file):
     """open_movies_page opens the app in HTML page"""
     url = os.path.abspath(output_file.name)
     webbrowser.open('file://' + url, new=2) # open in a new tab, if possible
-

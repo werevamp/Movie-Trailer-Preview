@@ -5,6 +5,7 @@ page to generate the HTML"""
 import fresh_tomatoes
 import media
 
+
 def populate_movie_details():
     """populate movie details generates a list of movies and outputs
     the movie objects into an array"""
